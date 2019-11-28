@@ -1,0 +1,48 @@
+*_Zoologie_*
+
+Passionné de zoologie, vous avez décidé de construire une application
+Java permettant de représenter différents types d’animaux. Vous avez
+commencé par vos animaux préférés, les canards, en créant une interface
+Canard possédant deux méthodes :
+
+–void cancaner() qui permet de faire caqueter le canard
+
+–dandiner(double distance) qui permet de faire marcher le canard sur une
+certaine distance
+
+Vous avez ensuite implanté plusieurs réalisations de cette interface :
+la classe Colvert, la classe Mandarin etc.
+
+En avançant dans la construction de votre application, vous avez défini
+une interface Animal plus générale avec les méthodes suivantes :
+
+–void faireDuBruit()
+
+–avance(double distance) qui permet de faire bouger l’animal en question
+
+Vous allez maintenant pouvoir gérer des collections complètes d’animaux
+variés. Malheureusement, le disque dur de votre vieil ordinateur vous a
+lâché et vous ne disposez plus que du bytecode de l’interface Canard et
+de ses réalisations. Impossible donc de modifier ces classes et vous ne
+pouvez pas les réécrire, les caquètements des canards vous ayant demandé
+trop de temps à implanter !
+
+On veut pouvoir considérer ici des Colvert, Mandarin etc. comme des
+objets de type Animal, pour pouvoir les insérer dans une liste d'Animal,
+pour par exemple demander à tous les objets de la liste de faire du
+bruit, les canards vont cancaner.
+
+a.  en ne modifiant pas les classes et interfaces existantes, proposez
+une modélisation (diagramme de classes UML) et une implémentation Java
+(avec main) permettant d'ajouter des canards dans une liste d'animaux et
+de faire cancaner ces canards.
+b.  Proposez une autre méthode permettant de modifier Canard pour le
+transformer en Animal ; quels sont les avantages/inconvénients de cette
+méthode par rapport à la précédente.
+c.  On considère maintenant une troupe d'animaux (Animal). On veut
+pouvoir compter le nombre de cancanements dans cette troupe , qui peut
+être composée de divers animaux (éléphants, chiens, canards...).
+
+Proposez une solution, sous la forme d'un diagramme de classes, pour
+afficher en temps réel le nombre de cancanements. Ecrivez le main de ce
+programme qui fabrique une troupe d'animaux et affiche les cancanements.
